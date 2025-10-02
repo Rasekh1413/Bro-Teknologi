@@ -1,4 +1,4 @@
-
+# Server pyhton
 from socket import *
 import random
 # TCP Python server, bruge sockettest til at teste.

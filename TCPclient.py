@@ -1,3 +1,4 @@
+# Klient pyhton
 from socket import *
 # TCP Python client - du kan bruge og køre en af Server python til at teste denne TCP client.
 # bruge denne eksempler for at teste: random, add, subtract, exit.
@@ -17,12 +18,12 @@ try:
         clientSocket.send(command.encode()) # sendes kommando til server
 
         if command.lower() == "exit":
-            print("Exiting client...")
+            print("Lukker klientet...")
             break
 
         # modtage server besked
         server_msg = clientSocket.recv(1024).decode().strip()
-        print(f"Server: {server_msg}")
+        print(f"Serveret: {server_msg}")
 
         numbers = input("Tilføj tal med mellemrum i midt: ").strip()
         clientSocket.send(numbers.encode())
