@@ -1,11 +1,12 @@
 from socket import *
-
+# TCP Python client - du kan bruge og køre en af Server python til at teste denne TCP client.
+# bruge denne eksempler for at teste: random, add, subtract, exit.
 serverName = 'localhost'  # eller tilføj en adresse fra anden computer eller server IP
 serverPort = 12345
 
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName, serverPort))
-print(f"Connected to {serverName}:{serverPort}")
+print(f"Klientet er klar til at kører og er forbinde med: {serverName}:{serverPort}")
 
 try:
     while True:

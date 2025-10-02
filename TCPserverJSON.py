@@ -10,7 +10,7 @@ serverPort = 12345
 serverSocket = socket(AF_INET, SOCK_STREAM)
 serverSocket.bind(('', serverPort))
 serverSocket.listen(33)  # # Så kan 33 servere køres samtidigt :)
-print('Serveret er klar til at modtage')
+print('Serveret er klar til at modtage som JSON scripter')
 
 while True:
     connectionSocket, addr = serverSocket.accept()
